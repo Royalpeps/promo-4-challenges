@@ -8,8 +8,6 @@ def sum_with_while(min, max)
   value
 end
 
-puts sum_with_while(1, 4)
-
 def sum_with_for(min, max)
   # CONSTRAINT: you should use a for..end structure
   value = 0
@@ -18,8 +16,6 @@ def sum_with_for(min, max)
   end
   value
 end
-
-puts sum_with_for(1, 4)
 
 def sum_recursive(min, max)
   # CONSTRAINT: you should use a recursive algorithm, i.e. the method should call itself
@@ -36,5 +32,3 @@ def sum_recursive(min, max)
   return value = sum_recursive(min+1, max) + min if min < max
   fail ArgumentError, "min > max" if min > max
 end
-
-puts sum_recursive(6, 4)
