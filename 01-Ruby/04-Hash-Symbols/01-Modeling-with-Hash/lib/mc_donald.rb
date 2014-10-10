@@ -1,31 +1,25 @@
-  BURGER_HASH = {
+  DISHES = {
   "Cheese Burger" => 290,
   "Big Mac" => 300,
-  "Mc Bacon" => 400,
-  "Royal Cheese" => 130
-  }
-
-  SIDE_HASH = {
   "French fries" => 130,
-  "Potatoes" => 130
-  }
-
-  BEVERAGE_HASH = {
+  "Potatoes" => 130,
+  "Mc Bacon" => 400,
+  "Royal Cheese" => 130,
   "Coca" => 160,
   "Sprite" => 170
   }
 
   MENU_HASH = {
-  "Happy Meal" => BURGER_HASH["Cheese Burger"] + SIDE_HASH["French fries"] + BEVERAGE_HASH["Coca"],
-  "Best Of Big Mac" => BURGER_HASH["Big Mac"] + SIDE_HASH["French fries"] + BEVERAGE_HASH["Coca"],
-  "Best Of Royal Cheese" => BURGER_HASH["Royal Cheese"] + SIDE_HASH["Potatoes"] + BEVERAGE_HASH["Sprite"]
+  "Happy Meal" => DISHES["Cheese Burger"] + DISHES["French fries"] + DISHES["Coca"],
+  "Best Of Big Mac" => DISHES["Big Mac"] + DISHES["French fries"] + DISHES["Coca"],
+  "Best Of Royal Cheese" => DISHES["Royal Cheese"] + DISHES["Potatoes"] + DISHES["Sprite"]
   }
 
  # p MENU_HASH["Best Of Royal Cheese"]
 
 def poor_calories_counter(burger, side, beverage)
   #TODO: return number of calories for this mcDonald order
-  nb_calories = BURGER_HASH[burger] + SIDE_HASH[side] + BEVERAGE_HASH[beverage]
+  nb_calories = DISHES[burger] + DISHES[side] + DISHES[beverage]
 end
 
 #p poor_calories_counter("Cheese Burger", "French fries", "Coca")
@@ -35,12 +29,8 @@ def calories_counter(*orders)
   array = *orders
   nb_calories = 0
   array.each {|item|
-  if BURGER_HASH.has_key?(item)
-     nb_calories += BURGER_HASH[item]
-   elsif SIDE_HASH.has_key?(item)
-     nb_calories += SIDE_HASH[item]
-   elsif BEVERAGE_HASH.has_key?(item)
-     nb_calories += BEVERAGE_HASH[item]
+  if DISHES.has_key?(item)
+     nb_calories += DISHES[item]
    else
      nb_calories += MENU_HASH[item]
    end
