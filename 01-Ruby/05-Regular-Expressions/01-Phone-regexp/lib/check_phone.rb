@@ -14,7 +14,7 @@
 
 def french_phone_number?(phone_number)
   # TODO: true or false?
-  nb_string = phone_number.tr_s(" ","").tr_s("-","")
+  nb_string = phone_number.tr_s(" ", "").tr_s("-", "")
   if nb_string =~ /^(0)[^0](\d{8})$/
     return true
   elsif nb_string =~ /^\W33(\d{9})$/
