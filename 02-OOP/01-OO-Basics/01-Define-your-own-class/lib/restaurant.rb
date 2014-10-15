@@ -1,5 +1,4 @@
 class Restaurant
-
   attr_reader :capacite
   attr_accessor :plat_du_jour, :nb_clients_ajd
 
@@ -13,7 +12,7 @@ end
 Restaurant_italien = Restaurant.new(20, "Margharita", 12)
 p Restaurant_italien
 
-Restaurant_asiatique = Restaurant.new(25,"Nems",23)
+Restaurant_asiatique = Restaurant.new(25, "Nems", 23)
 p Restaurant_asiatique
 
 Restaurant_francais = Restaurant.new(25, "Tartare", 23)
