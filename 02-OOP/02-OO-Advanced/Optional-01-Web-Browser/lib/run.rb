@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby -U
+require 'rubygems'
+require 'nokogiri'
+require'open-uri'
 
 require_relative "browser"
 
