@@ -8,4 +8,3 @@ require "faker"
   post = Post.new(name: name, url: url, votes: votes)
   post.save
 end
-
