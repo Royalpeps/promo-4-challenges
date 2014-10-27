@@ -12,7 +12,7 @@ class Controller
   def list
 # list all the recipes
     recipes = @cookbook.recipes
-    @display.print_recipes(recipes)
+    @display.print_recipes(recipes)C
   end
 
   def create
