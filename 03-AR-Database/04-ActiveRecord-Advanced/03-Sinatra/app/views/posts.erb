@@ -1,3 +1,28 @@
-<h1>Hacker News</h1>
+<h1>Bitcher News</h1>
+_________________________________________________________________________________
+</br>
+<strong>Add a post:</strong></br></br>
+<form action="/create_post" method="post">
+  Name: <input type="text" name="name" placeholder="Enter name"></br></br>
+  URL:  <input type="text" name="url" placeholder="Enter url"></br></br>
+  <button class="btn btn-lg btn-warning">Add post</button>
+</form>
+_________________________________________________________________________________
+</br>
+</br>
+Bitcher News has <%= @posts.length %> posts:
+</br>
+</br>
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <!-- <form action="/upvote" method="post"><input type="submit" value="Upvote" name="<%= post.id %>" </form> -->
+  <a href="/post/<%= post.id %>/upvote">Upvote</a>
+  <%= post.votes %>. <a href="/post/<%= post.id %>" target="_blank"><%= post.name %></a></li>
+  <% end %>
+</ul>
 
-# TODO: list posts here. You can use instance variables set in the controller (app.rb)
+
+
+
+
