@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Le Wagon news - Contact</title>
+          <meta charset="utf-8">
+          <meta name="description" content="Les actualités d'une école de code pas comme les autres">
+     </head>
+
+<body>
+<!-- Stuff to display in the page -->
+
+
+
+  <div id="header">
+    <h1>Le Wagon News</h1>
+    <p>Les actualités du Wagon</p>
+
+    <div id="menu">
+      <ul>
+        <li><a href="http://localhost:8000/blog.html">Home</a></li>
+        <li><a href="http://localhost:8000/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="contactez_nous">
+    <h2>Contactez-nous les gars !</h2>
+
+    <p>Alors, t'as quoi à nous raconter ?</p>
+    <textarea placeholder="Ta life!" cols="30" rows="5">
+    </textarea>
+
+    <form>
+      Ton anniv:
+      <input type="date" name="bday">
+    </form>
+
+
+    <select name="gender">
+      <option value="m">Male</option> <option value="f">Female</option>
+    </select>
+
+    <label for="subscribe">
+      <input type="checkbox" name="subscribe_newsletter" id="subscribe"> S'inscrire à la newsletter
+    </label>
+
+    <form action="/contact/send">
+      <input type="submit" value="Envoyer">
+    </form>
+
+  </div>
+
+
+  <div id="footer">
+    <h3>Le Wagon : WTF is that shit ?</h3>
+    <p>Le Wagon a été fondé en 2013 blablabla</p>
+
+    <div id="social_network">
+      <ul>
+        <li><a href="https://www.facebook.com/lewagonformation" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/@Lewagonparis" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
+<!-- end of file -->
