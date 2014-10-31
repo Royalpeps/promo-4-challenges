@@ -1,0 +1,141 @@
+#banner {
+  text-align: center;
+  background-image: url('images/banner.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  width:100%;
+}
+
+h1 {
+  font-family: pacifico;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
+#banner p {
+  font-size: 25px;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
+.navbar {
+  background-color: #EF5029;
+}
+
+.navbar-default {
+  border-color: #B22222;
+  border-bottom-width: 3px;
+}
+
+.navbar-brand {
+  font-family: pacifico;
+  padding-top:8px;
+}
+
+.navbar-default .navbar-brand {
+color: white;
+}
+
+.navbar-default .navbar-nav > li> a {
+color: white;
+font-family: montserrat;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #d43f3a;
+}
+
+.navbar-default .navbar-nav > li> a {
+color: white;}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+color: #333;
+background-color: #EF5029;
+}
+
+.navbar-nav > li >.dropdown-menu{
+  top:103%;
+  min-width: 50px;
+  background-color: #EF5029;
+}
+
+.navbar-nav > li >.dropdown-menu :hover{
+  background-color: #a0101a;
+}
+
+.nav .dropdown-menu li :hover{
+  color:white;
+}
+.btn-danger {
+  border:none;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 20px 26px;
+  font-size: 25px;
+  line-height: 1.33;
+  border-radius: 8px;
+}
+
+.espacement {
+  height: 80px;
+  background-image: url('images/KCa8KHY.png');
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #FFB224;
+  width: 100%;
+}
+
+.container div p {
+  color: white;
+  font-size: 20px;
+  font-family: montserrat;
+}
+
+#text_support {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.support {
+  border-radius: 10px;
+  border: 5px solid #0B4567;
+  height: 300px;
+  background-color: #02779E;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.container div h2 {
+  font-family: pacifico;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.door {
+  margin-top: 70px;
+  background-image: url("images/door.gif");
+  background-position: 50% 0%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border: 5px solid #0B4567;
+}
+
+.modal-footer {
+  float = right:
+}
+
+
