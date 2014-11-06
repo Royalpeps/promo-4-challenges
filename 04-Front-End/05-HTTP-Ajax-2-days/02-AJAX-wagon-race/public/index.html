@@ -3,11 +3,89 @@
   <head>
     <meta charset="utf-8" />
     <title>JAJAX Wagon Race</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body>
+
+    <a class="btn btn-danger" id="start_button" data-toggle="modal" data-target="#myModal">Start a new game!</a>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">How should we call you, bitches?</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Player 1:</label>
+                <input type="text" class="form-control" id="namePlayer1" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Player 2:</label>
+                <input type="text" class="form-control" id="namePlayer2" placeholder="Enter name">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="play">Let's play motherfucker</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <div id="game">
+
+      <table class="racer_table">
+        <tr id="player1_race">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td id="finish"></td>
+        </tr>
+      </table>
+
+      <div id="race_border"></div>
+
+      <table class="racer_table">
+        <tr id="player2_race">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td id="finish"></td>
+        </tr>
+      </table>
+
+      <h1>Rules</h1>
+      <p>Press Q for Player 1</p>
+      <p>Press P for Player 2</p>
+      <p>Press R to restart</p>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="/js/game.js"></script>
   </body>
 </html>
